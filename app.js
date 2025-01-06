@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const expresslayout = require('express-ejs-layouts')
 
 app.use(express.static('public'))
-app.use('/css',express.static(__dirname +'/public/css'))eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+app.use('/css',express.static(__dirname +'/public/css'))
 app.use(expresslayout)
 app.use(bodyParser.urlencoded({ extended:false }))
 
