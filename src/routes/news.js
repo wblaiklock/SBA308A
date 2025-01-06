@@ -15,7 +15,7 @@ router.get('/',async(req,res)=>{
     }
 });
 
-// breaking news
+// Breaking news
 router.get('/news/breaking-news',async(req,res)=>{
   try{
        const newsAPI = await axios.get(`https://gnews.io/api/v4/top-headlines?&token=${process.env.APIKEY}&topic=breaking-news&lang=${lang}`) 
@@ -26,7 +26,7 @@ router.get('/news/breaking-news',async(req,res)=>{
 });
 
 
-//search
+//Search
 router.post("/news/search",async(req,res)=>{
   try{
     const newsAPI = await axios.get(`https://gnews.io/api/v4/search?q="${req.body.search}"&token=${process.env.APIKEY}&lang=${lang}`)  

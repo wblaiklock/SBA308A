@@ -1,6 +1,6 @@
 <header>
   <div class="logo text-center">
-    <a href="/" style="text-decoration: none;"><h2 style="font-size: 40px;padding: 10px;"><b>VSP News</b></h2></a>
+    <a href="/" style="text-decoration: none;"><h2 style="font-size: 40px;padding: 10px;"><b>Per Scholas News</b></h2></a>
   </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -26,8 +26,8 @@
     </nav>
     </header>
 <div class="wrapper">
-    <div class="news">
-        <% if(news != null){ %>
+    <div class="news"> <!--News template per GNews-->
+        <% if(news != null){ %> 
 
            <% news.articles.forEach(function(articles,index){ %>
             <a href="<%- articles.url %>" style="text-decoration: none;"> 
