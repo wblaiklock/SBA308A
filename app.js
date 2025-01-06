@@ -8,7 +8,6 @@ app.use('/css',express.static(__dirname +'/public/css'))
 app.use(expresslayout)
 app.use(bodyParser.urlencoded({ extended:false }))
 
-
 app.set('views','./src/views/')
 app.set('view engine','ejs')
 

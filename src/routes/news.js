@@ -25,7 +25,6 @@ router.get('/news/breaking-news',async(req,res)=>{
   }   
 });
 
-
 //Search
 router.post("/news/search",async(req,res)=>{
   try{
